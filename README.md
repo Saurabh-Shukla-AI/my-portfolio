@@ -1,65 +1,79 @@
-# My Portfolio Website - Overview 🚀
+# Saurabh Shukla Portfolio
 
-This repository contains the open-source version of my personal portfolio website.  
-Feel free to explore the code and use it for learning and inspiration.
+Modern portfolio website for Saurabh Shukla, focused on AI engineering, computer vision, and production GenAI systems.
 
----
+## Live Website
 
-## ⚠️ Usage Notice
+- GitHub Pages: https://saurabh-shukla-ai.github.io/my-portfolio/
 
-This project is shared for learning purposes only.
+## Tech Stack
 
-Please do NOT:
-- Clone or replicate the full website or design
-- Repost it with minor content changes
-- Use this project for commercial/client work
-- Create tutorials or content using this exact project
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS (via @tailwindcss/vite)
+- GSAP
+- Three.js / React Three Fiber
 
-If you use parts of the code, you must provide proper credit linking back to the original repository.
+## Project Highlights
 
-Build your own version — don’t just copy.
+- Responsive, modern portfolio sections (hero, skills, experience, projects, contact)
+- Data-driven content from project data files
+- GitHub Pages deployment via GitHub Actions
+- Vite base path configured for repository-based pages deployment
 
-— Moncy Yohannan
+## Local Development
 
----
+### Prerequisites
 
-## 🛠️ Instructions
+- Node.js 20+
+- npm
 
-I have modified the GSAP Club plugins using trial versions.  
-⚠️ Note: Trial plugins cannot be used for production or hosting.
+### Install
 
-For official GSAP Club plugins, refer here:  
-https://gsap.com/docs/v3/Installation/
+```bash
+npm ci
+```
 
----
+### Run Dev Server
 
-## ⚙️ Tech Stack
+```bash
+npm run dev
+```
 
-React • TypeScript • GSAP • Three.js • WebGL • HTML • CSS • JavaScript
+### Build
 
----
+```bash
+npm run build
+```
 
-## 🎨 Assets Usage
+### Preview Production Build
 
-Some 3D assets included in this repository are free to use for learning purposes.
+```bash
+npm run preview
+```
 
-However:
+## Deployment
 
-- The original 3D avatar used on my live portfolio is NOT included in this repository
-- That avatar is a custom asset created over ~1 month
-- It is not open source and not available for reuse
+Deployment is handled by GitHub Actions using [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
 
-Any usage, extraction, or redistribution of that avatar from my live website is strictly prohibited.
+- Trigger: push to main
+- Build command: npm run build
+- Output directory: dist
 
----
+For first-time setup on a new repository:
 
-![Protfolio-Preview](https://github.com/user-attachments/assets/3c4557e7-6392-4928-b8a9-7b2476ef4edd)
+1. Open repository Settings > Pages
+2. Under Build and deployment, set Source to GitHub Actions
 
----
+## Repository Structure
 
-## 📄 License
+- Source code: [src](src)
+- Public assets: [public](public)
+- Vite config: [vite.config.ts](vite.config.ts)
+- Workflow: [.github/workflows/deploy.yml](.github/workflows/deploy.yml)
 
-This project is licensed under the Personal Portfolio License (PPL) v1.0.
+## License
 
-See the LICENSE file for full details
+This project is licensed under the terms described in [LICENSE](LICENSE).
 
