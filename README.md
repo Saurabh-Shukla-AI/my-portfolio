@@ -1,79 +1,85 @@
-# Saurabh Shukla Portfolio
+# Saurabh Shukla - Portfolio Website
 
-Modern portfolio website for Saurabh Shukla, focused on AI engineering, computer vision, and production GenAI systems.
+Personal portfolio built with React, TypeScript, Vite, and Three.js to showcase AI engineering, GenAI, and computer vision work.
 
-## Live Website
+## Live Link
 
 - GitHub Pages: https://saurabh-shukla-ai.github.io/my-portfolio/
+
+## Features
+
+- Modern single-page portfolio layout
+- Hero, About, Skills, Experience, Projects, and Contact sections
+- Data-driven content from [src/data/siteContent.ts](src/data/siteContent.ts)
+- Three.js + React Three Fiber visuals
+- GitHub Actions based deployment to GitHub Pages
 
 ## Tech Stack
 
 - React 18
 - TypeScript
-- Vite
-- Tailwind CSS (via @tailwindcss/vite)
+- Vite 5
+- Tailwind CSS
 - GSAP
-- Three.js / React Three Fiber
+- Three.js, React Three Fiber, Drei
 
-## Project Highlights
-
-- Responsive, modern portfolio sections (hero, skills, experience, projects, contact)
-- Data-driven content from project data files
-- GitHub Pages deployment via GitHub Actions
-- Vite base path configured for repository-based pages deployment
-
-## Local Development
+## Quick Start
 
 ### Prerequisites
 
-- Node.js 20+
+- Node.js 20 or newer
 - npm
 
-### Install
+### Install dependencies
 
 ```bash
 npm ci
 ```
 
-### Run Dev Server
+### Run locally
 
 ```bash
 npm run dev
 ```
 
-### Build
+### Build production bundle
 
 ```bash
 npm run build
 ```
 
-### Preview Production Build
+### Preview production build
 
 ```bash
 npm run preview
 ```
 
-## Deployment
+## Deployment (GitHub Pages)
 
-Deployment is handled by GitHub Actions using [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
+Workflow file: [.github/workflows/deploy.yml](.github/workflows/deploy.yml)
 
-- Trigger: push to main
-- Build command: npm run build
-- Output directory: dist
+- Deploys on push to main
+- Builds with npm run build
+- Publishes dist as Pages artifact
 
-For first-time setup on a new repository:
+### One-time GitHub setup
 
-1. Open repository Settings > Pages
-2. Under Build and deployment, set Source to GitHub Actions
+1. Open repository Settings -> Pages
+2. Set Source to GitHub Actions
 
-## Repository Structure
+## Important Files
 
-- Source code: [src](src)
-- Public assets: [public](public)
+- App entry: [src/App.tsx](src/App.tsx)
+- Content data: [src/data/siteContent.ts](src/data/siteContent.ts)
 - Vite config: [vite.config.ts](vite.config.ts)
-- Workflow: [.github/workflows/deploy.yml](.github/workflows/deploy.yml)
+- Deployment workflow: [.github/workflows/deploy.yml](.github/workflows/deploy.yml)
+
+## Notes
+
+- The Vite base path is configured to work correctly for GitHub Pages repository deployment.
+- If the site appears blank after deploy, verify Pages source is GitHub Actions and re-run the latest workflow.
 
 ## License
 
-This project is licensed under the terms described in [LICENSE](LICENSE).
+See [LICENSE](LICENSE).
 
